@@ -78,7 +78,7 @@ while(free_condominum != 0) {
             free_condominum.push(condo)
         }
     }
-    // condo_assigned_resident[]
+    
     // console.log(`removed ${condo} at index ${free_condominum.indexOf(condo)}`);
 }
 // console.log(resident_condo_choice)
