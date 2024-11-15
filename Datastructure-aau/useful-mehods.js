@@ -1,9 +1,9 @@
 #!/usr/bin/nodejs
 
+// TODO: loop
 const galeShapleyMenPropose = (m, w) => {
     console.log("Men Propose");
     let free_men = []
-
    for (const [key, value] of Object.entries(m)){
     console.log(`${key}: ${value}`);
    }

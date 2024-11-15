@@ -28,9 +28,10 @@
  * - 6 residents with ranked preferences for apartments.
  */
 
-// Residents' preferences for specific apartments in condominiums
+//
 
-
+// todo: Explanation:-          i selected condominum proposes  resident rejects to benefit from 
+// todo:                         improvment theory
 
 const condominium_preferences = {
     'Gerji-B1-101': ['Biruk', 'Abebe', 'Chaltu', 'Desta', 'Kebede', 'Girma'],  
@@ -47,17 +48,18 @@ const resident_preferences = {
     'Chaltu': ['Gerji-B1-101', 'Lafto-B3-301', 'Jemo-B10-101', 'Gerji-B1-102','Lafto-B3-302', 'Jemo-B10-102'],
     'Desta': ['Lafto-B3-301', 'Jemo-B10-102', 'Lafto-B3-301', 'Gerji-B1-102', 'Jemo-B10-101','Gerji-B1-101'],
     'Girma': ['Lafto-B3-301', 'Jemo-B10-101', 'Gerji-B1-102', 'Lafto-B3-302', 'Gerji-B1-101', 'Jemo-B10-102'],
-    'Kebede': ['Lafto-B3-301', 'Gerji-B1-102', 'Jemo-B10-101', 'Lafto-B3-302', 'Gerji-B1-101', 'Jemo-B10-102'],
+    'Kebede': ['Lafto-B3-301', 'Gerji-B1-102', 'Jemo-B10-101', 'Lafto-B3-302', 'Gerji-B1-101', 'Jemo-B10-102']
     }
 // Object.fromEntries([[]])
+const galeShapleyCondominum = (condominium_preferences, resident_preferences) => {
 
 let free_condominum = Object.entries(condominium_preferences).map(condo => condo[0])
 let condo_assigned_resident = Object.fromEntries(Object.entries(condominium_preferences).map(condo => [condo[0], 0]))
 let resident_condo_choice = Object.fromEntries(Object.entries(resident_preferences).map(resident => [resident[0], null]))
 
-console.log(condo_assigned_resident)
-console.log(resident_condo_choice)
-// console.log(condo_resident)
+// console.log(condo_assigned_resident)
+// console.log(resident_condo_choice)
+
 
 while(free_condominum != 0) {
     const condo = free_condominum.shift();
@@ -77,42 +79,16 @@ while(free_condominum != 0) {
         }
     }
     // condo_assigned_resident[]
-
-
     // console.log(`removed ${condo} at index ${free_condominum.indexOf(condo)}`);
+}
+// console.log(resident_condo_choice)
+return (resident_condo_choice);
 
 }
-console.log(resident_condo_choice)
 
-// const resident_preferences = {
-//     'Abebe': ['Jemo-B10-102', 'Gerji-B1-101', 'Summit-B2-503', 'Megenagna-B5-202', 'Bole Bulbula-B7-401', 'Lafto-B3-301'],
-//     'Biruk': ['Gerji-B1-103', 'Summit-B2-502', 'Bole Bulbula-B7-403', 'Jemo-B10-101', 'Megenagna-B5-203', 'Lafto-B3-303'],
-//     'Chaltu': ['Summit-B2-501', 'Gerji-B1-102', 'Megenagna-B5-202', 'Jemo-B10-103', 'Lafto-B3-302', 'Bole Bulbula-B7-402'],
-//     'Desta': ['Lafto-B3-303', 'Summit-B2-501', 'Gerji-B1-101', 'Bole Bulbula-B7-402', 'Jemo-B10-101', 'Megenagna-B5-201'],
-//     'Elias': ['Megenagna-B5-201', 'Gerji-B1-102', 'Jemo-B10-102', 'Bole Bulbula-B7-401', 'Summit-B2-503', 'Lafto-B3-301'],
-//     'Fikre': ['Bole Bulbula-B7-403', 'Jemo-B10-103', 'Lafto-B3-302', 'Gerji-B1-103', 'Megenagna-B5-203', 'Summit-B2-502']
-// };
-
-// // Condominiums' preferences for residents
-// const condominium_preferences = {
-//     'Gerji-B1-101': ['Biruk', 'Abebe', 'Chaltu', 'Elias', 'Desta', 'Fikre'],
-//     'Gerji-B1-102': ['Abebe', 'Chaltu', 'Desta', 'Fikre', 'Elias', 'Biruk'],
-//     'Gerji-B1-103': ['Chaltu', 'Elias', 'Fikre', 'Abebe', 'Biruk', 'Desta'],
-//     'Jemo-B10-101': ['Desta', 'Biruk', 'Chaltu', 'Abebe', 'Fikre', 'Elias'],
-//     'Jemo-B10-102': ['Abebe', 'Elias', 'Biruk', 'Chaltu', 'Desta', 'Fikre'],
-//     'Jemo-B10-103': ['Fikre', 'Desta', 'Chaltu', 'Elias', 'Biruk', 'Abebe'],
-//     'Megenagna-B5-201': ['Elias', 'Biruk', 'Abebe', 'Fikre', 'Desta', 'Chaltu'],
-//     'Megenagna-B5-202': ['Chaltu', 'Desta', 'Fikre', 'Abebe', 'Elias', 'Biruk'],
-//     'Megenagna-B5-203': ['Fikre', 'Chaltu', 'Abebe', 'Desta', 'Elias', 'Biruk'],
-//     'Lafto-B3-301': ['Abebe', 'Elias', 'Biruk', 'Chaltu', 'Fikre', 'Desta'],
-//     'Lafto-B3-302': ['Fikre', 'Chaltu', 'Desta', 'Biruk', 'Abebe', 'Elias'],
-//     'Lafto-B3-303': ['Desta', 'Abebe', 'Elias', 'Fikre', 'Chaltu', 'Biruk'],
-//     'Bole Bulbula-B7-401': ['Chaltu', 'Fikre', 'Desta', 'Abebe', 'Biruk', 'Elias'],
-//     'Bole Bulbula-B7-402': ['Desta', 'Chaltu', 'Biruk', 'Abebe', 'Elias', 'Fikre'],
-//     'Bole Bulbula-B7-403': ['Fikre', 'Biruk', 'Desta', 'Abebe', 'Chaltu', 'Elias'],
-//     'Summit-B2-501': ['Biruk', 'Chaltu', 'Elias', 'Desta', 'Abebe', 'Fikre'],
-//     'Summit-B2-502': ['Chaltu', 'Fikre', 'Desta', 'Biruk', 'Abebe', 'Elias'],
-//     'Summit-B2-503': ['Elias', 'Abebe', 'Biruk', 'Chaltu', 'Desta', 'Fikre']
-// };
-
+const result = Object.entries(galeShapleyCondominum(resident_preferences, condominium_preferences));
+console.log("After reversing condominums and residents postion: for readability")
+for (combo of result) {
+    console.log([combo[1], combo[0]])
+}
 
