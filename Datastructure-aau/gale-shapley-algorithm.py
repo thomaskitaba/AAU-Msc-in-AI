@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-# """ Gale-Shapley Algorithm Implementation
-# Parameters:
-# - m (dict): A dictionary where each key is a man and the value is a list of women in preference order.
-# - w (dict): A dictionary where each key is a woman and the value is a list of men in preference order.
-# """
+
+""" Gale-Shapley Algorithm Implementation
+Parameters:
+- m (dict): A dictionary where each key is a man and the value is a list of women in preference order.
+- w (dict): A dictionary where each key is a woman and the value is a list of men in preference order.
+"""
 
 
 def galeShapleyMenPropose(m, w):
