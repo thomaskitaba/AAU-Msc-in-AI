@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+const crypto = require('crypto');
 /**
  * Dataset: Condominium Assignment Problem (Using Gale-Shapley Algorithm)
  *
@@ -32,6 +33,51 @@
 
 // todo: Explanation:-          i selected condominum proposes  resident rejects to benefit from 
 // todo:                         improvment theory
+
+// Generate a cryptographically secure random integer between 0 and n-1
+
+
+// Generate a cryptographically secure random integer between 0 and n-1
+function getRandomInt(n) {
+  return crypto.randomInt(0, n); // Using Node.js crypto.randomInt() (since v15)
+}
+
+let n = 6;  // Define the upper bound
+let randomNumber = getRandomInt(n);
+console.log(randomNumber);  // A random number between 0 and 9
+
+
+
+let allCondominiums =  ['Lafto-B3-302', 'Jemo-B10-101', 'Gerji-B1-102', 'Gerji-B1-101', 'Jemo-B10-102', 'Lafto-B3-301'];
+let individuals = ['Biruk', 'Abebe', 'Chaltu', 'Desta', 'Kebede', 'Girma'];
+let resident_preferences_1 = {};
+// let randomChoice = [];
+for (let i = 0; i < individuals.length; i++) {
+    resident_preferences_1[individuals[i]]= []
+}
+
+for (let j = 0; j < resident_preferences_1.length; j++)
+{
+    let randomIndex = getRandomInt(individuals.length);
+    resident
+}
+console.log(condominium_preferences_1);
+
+// for (let i = 0; i < n; i++) {
+//     let randomChoice = [];
+//     let randIndex = -1;
+//     for (let j = 0; j < 6; j++) {
+//     randIndex = getRandomInt(allCondominiums.length);
+//     randomChoice.push(allCondominiums[randIndex])
+//     allCondominiums.splice(randIndex, 1)
+//     }
+//     condominium_preferences_1.individuals = randomChoice
+// }
+
+// for (row of condominium_preferences_1) {
+//     console.log(row)
+// }
+
 
 const condominium_preferences = {
     'Gerji-B1-101': ['Biruk', 'Abebe', 'Chaltu', 'Desta', 'Kebede', 'Girma'],  
@@ -83,7 +129,6 @@ while(free_condominum != 0) {
 }
 // console.log(resident_condo_choice)
 return (resident_condo_choice);
-
 }
 
 const result = Object.entries(galeShapleyCondominum(resident_preferences, condominium_preferences));

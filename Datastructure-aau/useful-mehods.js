@@ -7,7 +7,6 @@ const galeShapleyMenPropose = (m, w) => {
    for (const [key, value] of Object.entries(m)){
     console.log(`${key}: ${value}`);
    }
-
    Object.entries(m).forEach(([k, v]) => {
     console.log(k, v)
    })
