@@ -8,21 +8,25 @@ board = []
 solutions = []
 n = 0
 
-def check_position(row, col):
-    return True 
-
-
+def check_position(n, row, col):
+    
+    for r in range(row):
+        # means same column or diagonal
+        if board[r] == col or abs(board[r] - col) == abs(r - row):
+            return False
+    return True
+                   
 def nqueens(row, board, solutions):
     if row == n:
         solutions.append(board[:])
         return solutions
     
     for col in range(n):
-        if check_position(row, col):
-            board[row] = 1
+        if check_position(n, row, col):
+            board[row] = col
             nqueens(row + 1, board, solutions)
-            board[row] = 0
-        
+            board[row] = -1
+    
     return solutions
     # print("solve n queens problem {}".format(n))
     
@@ -40,8 +44,12 @@ if __name__ == "__main__":
         if (n < 4):
             print("Usage: Enter a number greater than 3")
     row = 0
-    for i in range(n):
-        board.append([0] * n )
-    print(board)
+    # for i in range(n):
+    #     board.append([0] * n )
+    board = [-1] * n
+    # print(board)
     
-    nqueens(row, board, solutions)
+    solution = nqueens(row, board, solutions)
+    print(solution)
+    
+    
