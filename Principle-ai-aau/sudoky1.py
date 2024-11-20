@@ -47,9 +47,7 @@ def solve_sudoku(board):
                 return True
             # Backtrack
             board[row][col] = 0
-    
     return False  # No solution found
-
 # Example usage
 board = [
     [5, 3, 0, 0, 7, 0, 0, 0, 0],
@@ -62,5 +60,4 @@ board = [
     [0, 0, 0, 4, 1, 9, 0, 0, 5],
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
-
 

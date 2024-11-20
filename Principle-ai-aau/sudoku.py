@@ -8,7 +8,7 @@ def find_empty_space(board):
     return (row, col)
 
 def solve_sudoku(board):
-    row, col = find_empty_space(board)
+    empty = find_empty_space(board)
     # place num 1 - 9  to this location
     board[row] = col
     num = 1
@@ -16,7 +16,7 @@ def solve_sudoku(board):
         return True
     else:
         return False
-        
+    
 if __name__ == "__main__":
     board = [
     [5, 3, 0, 0, 7, 0, 0, 0, 0],
