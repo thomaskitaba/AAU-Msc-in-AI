@@ -14,4 +14,6 @@ def longestIncreasingSubsequence(a):
 if __name__ == "__main__":
     array = [1, 3, 6, 7, 9, 4, 10, 5, 6]
     longestIncreasingSubsequence(array)
-    
+
+
+# steps

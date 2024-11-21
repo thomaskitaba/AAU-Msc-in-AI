@@ -44,6 +44,7 @@ def solve_sudoku(board):
             board[row][col] = 0
     
     return False
+
 def print_board(board):
     for r in range(9):
         for c in range(9):
@@ -56,7 +57,7 @@ def print_board(board):
 #         print(r)
 if __name__ == "__main__":
     board = [
-    [5, 3, 5, 0, 7, 0, 0, 0, 0],
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
     [6, 0, 0, 1, 9, 5, 0, 0, 0],
     [0, 9, 8, 0, 0, 0, 0, 6, 0],
     [8, 0, 0, 0, 6, 0, 0, 0, 3],
