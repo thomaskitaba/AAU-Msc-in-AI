@@ -5,7 +5,8 @@ from collections import deque, defaultdict
 def word_ladder(beginWord, endWord, wordList):
     if endWord not in wordList:
         return 0
-
+    if beginWord is None or beginWord == "":
+        return 0
     # Create a graph of intermediate patterns
     neighbors = defaultdict(list)
 #     neighbors = {

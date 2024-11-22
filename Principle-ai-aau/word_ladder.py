@@ -7,10 +7,30 @@ def word_ladder(beginWord, endWord, wordList):
     # check required conditions
     if endWord not in wordList:
         return 0
+    if beginWord is None or len(beginWord) == 0:
+        return 0
+    if endWord is None or len(endWord) == 0:
+        return 0
     # prepare neighbors dictionary for patterns
-    wordList.append(beginWord)
+    if beginWord not in wordList:
+        wordList.append(beginWord)
     neighbors = defaultdict(list)
-    
+    #     neighbors = {
+#     "*it": ["hit"],
+#     "h*t": ["hit", "hot"],
+#     "hi*": ["hit"],
+#     "*ot": ["hot", "dot", "lot"],
+#     "ho*": ["hot"],
+#     "d*t": ["dot"],
+#     "do*": ["dot", "dog"],
+#     "*og": ["dog", "log", "cog"],
+#     "d*g": ["dog"],
+#     "l*t": ["lot"],
+#     "lo*": ["lot", "log"],
+#     "c*g": ["cog"],
+#     "co*": ["cog"]
+# }
+
     for word in wordList:
         for chr in range(len(word)):
             # find diffrent patterns for each word
@@ -36,20 +56,22 @@ def word_ladder(beginWord, endWord, wordList):
             pattern = current_word[:idx] + '*' + current_word[idx + 1:]
             # look possible paths for the pattern in neighbors
             for neighbor in neighbors[pattern]:
-                if neighbor not in visited:
-                    if neighbor == endWord:
+                if neighbor == endWord:
                         return steps + 1
+                if neighbor not in visited:
                     visited.add(neighbor)
                     queue.append([neighbor, steps + 1])
-                    
-    return steps
+
+    return 0
 if __name__ == "__main__":
     # beginWord = "hit"
     # endWord = "cog"
     # wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
-    beginWord = "lead"
-    endWord = "gold"
-    wordList = ["load", "goad", "gold", "lode", "lade"]
-
+    # beginWord = "lead"
+    # endWord = "gold"
+    # wordList = ["load", "goad", "gold", "lode", "lade"]
+    beginWord = "hot"
+    endWord = "dog"
+    wordList = ["hot", "dog"],
     print(word_ladder(beginWord, endWord, wordList))
     
