@@ -14,8 +14,7 @@ def postfix_to_infix(data):
                 # print(stack)
                 stack.append(item)
             else:
-                return "Invalid Postfix"
-            
+                return "Invalid Postfix"  
         else: 
             stack.append(val)
     print(stack[0])
@@ -25,7 +24,7 @@ def postfix_to_infix(data):
 if __name__ == "__main__":
     
     postfix = [
-    "abc*+",          # Output: (a + (b * c))
+    "abc*",          # Output: (a + (b * c))
     "ab+c*",          # Output: (a + b) * c
     "ab+c*d+",        # Output: ((a + b) * c) + d
     "abc*+de*+f+",    # Output: ((a + (b * c)) + (d * e)) + f
@@ -37,47 +36,8 @@ if __name__ == "__main__":
     "ab+c*de*f+*",   # Output: ((a + b) * c + (d + (e * f)))
 ]
 
-
     for i in range(len(postfix)):
         result = postfix_to_infix(postfix[i])
         print(f'{result}-{i + 1}')
 
-    # infix = "a+b*c-d/e+f-g"
-    # print(postfix_to_infix(infix))
     
-    # infix = "a+b*c-d/e+f-g*h"
-    # print(postfix_to_infix(infix))
-    
-    # infix = "a+b*c-d/e+f-g*h/i"
-    # print(postfix_to_infix(infix))
-    
-    # infix = "a+b*c-d/e+f-g*h/i+j"
-    # print(postfix_to_infix(infix))
-    
-   
-    
-    
-    # postfix = "abc*+"
-    # print(postfix_to_infix(postfix))
-    
-    # postfix = "abc*+de*f+g*+"
-    # print(postfix_to_infix(postfix))
-    
-    
-    # postfix = "abc*+"
-    # print(postfix_to_infix(postfix))
-
-    # postfix = "abc*+de*f+g*+"
-    # print(postfix_to_infix(postfix))
-    
-    # postfix = "abc*+de*f+g*+h*+"
-    # print(postfix_to_infix(postfix))
-
-    # postfix = "abc*+de*f+g*+h*+i*+"
-    # print(postfix_to_infix(postfix))
-    
-    # postfix = "abc*+de*f+g*+h*+i*+j*+k*"
-    # print(postfix_to_infix(postfix))
-    
-    # postfix = "ab+c*de*f+*"
-    # print(postfix_to_infix(postfix))  # Output: ((a + b) * c + (d + (e * f)))
