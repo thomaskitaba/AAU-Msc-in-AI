@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+stack = [1, 2, 3, 4, 5]
+def pop():
+    return stack.pop()
+def push(value):
+    stack.append(value)
+    return stack
+
+def peek(type_of_data_structure):
+    if type_of_data_structure == "queue":
+        return stack[0] # FIFO
+    if type_of_data_structure == "stack":
+        return stack[len(stack) - 1]   # LIFO
+    return stack[len(stack) - 1]
+
+def enqueue(v):
+    stack.append(v)
+    return stack
+
+def isEmpty(s):
+    if len(stack) > 0:
+        return 1
+    return 0
+def top():
+    return stack[len(stack) - 1]
+
+def _dequeue():
+    return stack.pop(0)
+
+def top():
+    return stack[len(stack) - 1]
+
+if __name__ == "__main__":
+    
+    print(push(6))  # [1, 2, 3, 4, 5, 6]
+    print(pop()) #   5
+    print(enqueue(7))
+    print(_dequeue())
+    print(stack)    # [2, 3, 4, 5, 7, 7]
+    print(push(top()))  # [2, 3, 4, 5, 7, 7]
+    print(peek("queue")) # 2
+    print(peek("stack")) # 7
+    
+    
