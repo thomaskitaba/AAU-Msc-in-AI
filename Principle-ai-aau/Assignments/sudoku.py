@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-import math
-    
+import math 
 def is_valid(board, row, col, num):
     """ check if placing num on (row, col) is valid """
     # Check column
@@ -8,28 +7,30 @@ def is_valid(board, row, col, num):
         if board[i][col] == num or board[row][i] == num:
             return False
     # Check part of sudoku (3 x 3) grid
-
-    start_col = 3 * math.floor(col / 3)   # 3 * math.floor(col // 3)
+    start_col = 3 * math.floor(col / 3)   # 3 * (col // 3)
     start_row = 3 * (row // 3)
     for i in range(start_row, start_row + 3):
         for j in range(start_col, start_col + 3):
             if board[i][j] == num:
-                return False
-    return True
-
+                return False  # means the location is not empty
+    return True # means the location has value
     
 def find_empty_space(board):
-    """ return row, col if empty location 
-    to place num is found 
+    """ 
+        return row, col if empty location 
+        to place num is found 
     """
     for r in range(9):
         for c in range(9):
+            # 0 means empty location on the board
             if board[r][c] == 0:
                 return (r, c)
     return None
             
-
 def solve_sudoku(board):
+    """
+        recursive function that uses backtracking
+    """
     empty = find_empty_space(board)
     if empty:
         row, col = empty # destructure the returned values
@@ -46,15 +47,16 @@ def solve_sudoku(board):
     return False
 
 def print_board(board):
+    """
+        print the sudoku board
+    """
     for r in range(9):
         for c in range(9):
             if c != 9:
                 print(board[r][c], end=" | ")
         print("")
         
-# def print_board(board):
-#     for r in board:
-#         print(r)
+
 if __name__ == "__main__":
     board = [
     [5, 3, 0, 0, 7, 0, 0, 0, 0],

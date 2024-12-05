@@ -3,7 +3,9 @@ from collections import deque, defaultdict
 import json
 
 def word_ladder(beginWord, endWord, wordList):
-    
+    """
+       find the shortest transformation sequence from beginWord to endWord
+    """
     # check required conditions
     if endWord not in wordList:
         return 0
@@ -15,21 +17,6 @@ def word_ladder(beginWord, endWord, wordList):
     if beginWord not in wordList:
         wordList.append(beginWord)
     neighbors = defaultdict(list)
-    #     neighbors = {
-#     "*it": ["hit"],
-#     "h*t": ["hit", "hot"],
-#     "hi*": ["hit"],
-#     "*ot": ["hot", "dot", "lot"],
-#     "ho*": ["hot"],
-#     "d*t": ["dot"],
-#     "do*": ["dot", "dog"],
-#     "*og": ["dog", "log", "cog"],
-#     "d*g": ["dog"],
-#     "l*t": ["lot"],
-#     "lo*": ["lot", "log"],
-#     "c*g": ["cog"],
-#     "co*": ["cog"]
-# }
 
     for word in wordList:
         for chr in range(len(word)):
@@ -37,18 +24,15 @@ def word_ladder(beginWord, endWord, wordList):
             pattern = word[:chr] + '*' + word[chr + 1:]
             # add the patten as key to the neghbors dict to know where to go from that pattern
             neighbors[pattern].append(word)
-    
-    # print(json.dumps(neighbors, indent=4))
-    # Preparation for Greadth First Search
-    # now each words are counted as nodes
-    
+
     steps = 1
+    # add beginWord to queue to use it as a node
     queue = deque([[beginWord, steps]])
     # hold information for visited words or in this case nodes
     visited = set([beginWord])
     
     while queue:
-        # get the first item (node) form the queue
+        # get the first item (node) from the queue
         current_word, steps = queue.popleft()
         # print(current_word) 
         for idx in range(len(current_word)):
@@ -61,15 +45,16 @@ def word_ladder(beginWord, endWord, wordList):
                 if neighbor not in visited:
                     visited.add(neighbor)
                     queue.append([neighbor, steps + 1])
-
     return 0
 if __name__ == "__main__":
-    # beginWord = "hit"
-    # endWord = "cog"
-    # wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
-    # beginWord = "lead"
-    # endWord = "gold"
-    # wordList = ["load", "goad", "gold", "lode", "lade"]
+    beginWord = "hit"
+    endWord = "cog"
+    wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
+    print(word_ladder(beginWord, endWord, wordList))
+    beginWord = "lead"
+    endWord = "gold"
+    wordList = ["load", "goad", "gold", "lode", "lade"]
+    print(word_ladder(beginWord, endWord, wordList))
     beginWord = "hot"
     endWord = "dog"
     wordList = ["hot", "dog"],

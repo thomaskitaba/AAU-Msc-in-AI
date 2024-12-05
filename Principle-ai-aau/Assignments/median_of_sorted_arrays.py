@@ -3,16 +3,17 @@
 Given two sorted arrays nums1 and nums2, find the median of the two sorted arrays
 """
 def MedianOfSortedArray(nums1, nums2):
+    
     A, B = nums1, nums2
+    # for ease of use make the smaller A and the larger B
     if len(B) < len(A):
         A, B = B, A
-        
+    # calculate total and half of the combined list
     total = len(A) + len(B)
     half = total // 2
     
     l, r = 0, len(A) - 1  # left and right of A
     # claculate center of A and B that make up half of the total
-    
     
     while True:
         i = (l + r) // 2  # half of A
@@ -24,8 +25,8 @@ def MedianOfSortedArray(nums1, nums2):
         Bleft = B[j] if j >= 0 else float("infinity")
         Bright = B[j + 1] if (j + 1) < len(B) else float("infinity")
         
-        
-        if Aleft <= Bright and Bleft <= Aright: # valid partition
+        # check if the partition is valid
+        if Aleft <= Bright and Bleft <= Aright: 
             # find median for odd total
             if total % 2:
                 return min(Aright, Bright)

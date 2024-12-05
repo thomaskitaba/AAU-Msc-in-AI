@@ -9,6 +9,10 @@ solutions = []
 n = 0
 
 def check_position(n, row, col):
+    """
+     check if placing a queen at row, col  is valid
+     both vertically and diagonally
+    """
     for r in range(row):
         # means same column or diagonal
         if board[r] == col or abs(board[r] - col) == abs(r - row):
@@ -16,14 +20,20 @@ def check_position(n, row, col):
     return True
 
 def nqueens(row, board, solutions):
+    """
+    recursive function that uses backtracking
+    """
     if row == n:
         solutions.append(board[:])
         return solutions
 
     for col in range(n):
         if check_position(n, row, col):
+            # place queen on board denoted by placing col on row
             board[row] = col
+            # recursively call nqueens to place queen on the next row
             nqueens(row + 1, board, solutions)
+            # backtack and remove the queen from previous row
             board[row] = -1
     
     return solutions
@@ -42,6 +52,7 @@ if __name__ == "__main__":
         if (n < 4):
             print("Usage: Enter a number greater than 3")
     row = 0
+    # fill the board with -1
     board = [-1] * n
     # print(board)
     
