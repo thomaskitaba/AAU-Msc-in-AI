@@ -8,9 +8,9 @@ directed and Undireted graph
 graph = {
     "Addis Ababa": ["Adama", "Bahir Dar"],
     "Adama": ["Hawassa"],
-    "Bahir Dar": ["Gondar", "Mekele"],
+    "Bahir Dar": ["Gonder", "Mekele"],
     "Hawassa": [],
-    "Gondar": ["Mekele"],
+    "Gonder": ["Mekele"],
     "Mekele": ["Addis Ababa", "Gonder"]
 }
 
