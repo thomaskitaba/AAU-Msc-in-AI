@@ -41,6 +41,3 @@ def dfs(current_node, steps):
 dfs("Addis Ababa", 0)
 print(name)
 print(f"shortest step: {shortest_step}")
-
-    
-    
