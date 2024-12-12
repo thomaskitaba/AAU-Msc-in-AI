@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-
+from traveling_sales_man import traveling_sales_man as graph
 graph = {
     "Addis Ababa": {
         "Adama": {"distance": 598, "heuristic": 50},
@@ -23,7 +23,7 @@ graph = {
     },
 }
 
-graph = {
+graph1 = {
     "Addis Ababa": ["Adama", "Bahir Dar"],
     "Adama": ["Hawassa"],
     "Bahir Dar": ["Gondar", "Mekele"],
@@ -56,17 +56,22 @@ def dfs(current_city, rec_path):
     
     for city in graph.get(current_city, {}):
         # if city not in visited:   #todo: if this is uncomented cycles wont be detected, because the city where the cycle occurs wont be passed to the "if current_city in rec_path:
+    
         dfs(city, rec_path)    
+    visited.remove(current_city)
     rec_path.pop()
   
 if __name__ == "__main__":
-    start = [city for city in graph.keys()][0]
-
-    print(f'Cities:- {len(visited)}')
-
-    # print(cycles)
     
-    dfs(start, [])
+
+
+    dfs("Addis Ababa", [])
+    print(f'Cities:- {len(visited)}')
+    # for city in graph.keys():
+    #     #todo: just incase there are disconected componentes or in our case cities
+    #     if city not in visited:
+    #         dfs(city, [])
+    # Cycles detected
+    print(f'Cycles => {len(cycles)}')
     print(cycles)
     
-   

@@ -36,7 +36,6 @@ def bfs(start, end, graph):
     print(path)
     return None
     
-    
 
 
 if __name__ == "__main__":

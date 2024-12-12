@@ -1,0 +1,123 @@
+DFS-Based Questions:
+1.	Finding a Path Between Cities (DFS Pathfinding)
+o	Question: "Use Depth-First Search (DFS) to find a route from 'Addis Ababa' to 'Hawassa'."
+o	Objective: Explore all possible paths from Addis Ababa to Hawassa, and report if a path exists.
+o	Graph to Use:
+python
+Copy code
+graph = {
+    "Addis Ababa": {"Adama": {"distance": 598}, "Bahir Dar": {"distance": 225}},
+    "Adama": {"Hawassa": {"distance": 164}},
+    "Bahir Dar": {"Gondar": {"distance": 378}, "Mekele": {"distance": 644}},
+    "Hawassa": {},
+    "Gondar": {"Mekele": {"distance": 273}},
+    "Mekele": {"Addis Ababa": {"distance": 447}},
+}
+o	Hint: Use DFS to traverse the graph and determine a valid path.
+2.	Visiting All Cities Exactly Once (TSP-like Enumeration)
+o	Question: "Using DFS, list all possible routes that start from 'Addis Ababa' and visit all cities exactly once."
+o	Objective: Enumerate all possible paths (routes) that begin from Addis Ababa and cover all cities exactly once.
+o	Graph to Use: Same as above.
+o	Hint: Implement DFS with backtracking to explore all permutations of cities.
+3.	Path with Maximum Cities Visited
+o	Question: "Find a path from 'Addis Ababa' to 'Mekele' that visits at least 4 cities, using Depth-First Search (DFS)."
+o	Objective: Use DFS to explore paths from Addis Ababa to Mekele that include at least 4 cities along the route.
+o	Graph to Use: Same as above.
+o	Hint: Limit the DFS depth or count cities to ensure at least 4 cities are visited.
+4.	Cycle Detection in the Graph
+o	Question: "Use Depth-First Search (DFS) to determine if there is a cycle in the graph from 'Addis Ababa' to 'Mekele'."
+o	Objective: Use DFS to detect cycles in the graph, especially between cities like 'Addis Ababa', 'Mekele', and others.
+o	Graph to Use: Same as above.
+o	Hint: Track visited nodes to detect back edges indicating cycles.
+5.	Finding Path Between Two Cities with Depth Limit (DFS with Depth Limit)
+o	Question: "Find a path from 'Addis Ababa' to 'Gondar' using DFS with a maximum depth of 3."
+o	Objective: Perform a DFS with a limit on the number of cities to visit in the path. Ensure that the path from Addis Ababa to Gondar does not exceed 3 cities.
+o	Graph to Use: Same as above.
+o	Hint: Limit the depth of DFS to 3, and check if a path can be found within the constraint.
+6.	Shortest Path Approximation
+o	Question: "Using DFS, approximate a route that visits 'Addis Ababa', 'Bahir Dar', and 'Mekele' in the shortest possible route. (Without considering exact distance calculation)"
+o	Objective: Use DFS to find a route that covers these cities. While DFS is not optimized for distance, it will explore all routes.
+o	Graph to Use: Same as above.
+o	Hint: Although DFS doesn't optimize for shortest paths, it will help in exploring all possible routes. You can calculate the distance afterward for comparison.
+7.	Path Enumeration with Specific Stop Requirement
+o	Question: "Using DFS, find a route from 'Addis Ababa' to 'Gondar' that passes through 'Bahir Dar'."
+o	Objective: Use DFS to find a path from Addis Ababa to Gondar, ensuring that it passes through Bahir Dar.
+o	Graph to Use: Same as above.
+o	Hint: Implement DFS with a condition that Bahir Dar must be visited.
+8.	DFS with Heuristic Constraints
+o	Question: "Apply DFS to find a route from 'Addis Ababa' to 'Mekele', with the constraint that the route must pass through 'Bahir Dar' and minimize the distance to each city."
+o	Objective: Use DFS and include a simple heuristic to minimize the distance at each city (while DFS itself is not heuristic-driven, you can manually limit choices to those cities with smaller distances).
+o	Graph to Use: Same as above.
+o	Hint: Incorporate the concept of heuristic by considering distances between cities in the adjacency list.
+9.	Path with Minimum Heuristic Distance (DFS with Heuristic Approximation)
+o	Question: "Using DFS, find a route from 'Addis Ababa' to 'Gondar' that minimizes the heuristic distance at each step."
+o	Objective: Perform a DFS search that minimizes the heuristic values (instead of just distance), focusing on cities with lower heuristic values (given in the adjacency list).
+o	Graph to Use: Same as above, considering the "heuristic" values in the adjacency list.
+o	Hint: You can incorporate the heuristic value as part of the path selection during DFS traversal.
+10.	DFS with Dead Ends (Exploring Path Without Success)
+o	Question: "Use DFS to attempt finding a route from 'Hawassa' to 'Gondar'."
+o	Objective: Since 'Hawassa' has no outgoing connections, this will explore how DFS behaves with dead ends.
+o	Graph to Use: Same as above.
+o	Hint: The DFS search will end early if there are no valid neighbors to explore from Hawassa.
+These questions cover a wide range of DFS-based scenarios, from simple pathfinding to exploring all possible routes and handling constraints like visiting specific cities or minimizing distance. By applying DFS, you'll also explore how it works in different contexts, even when combined with distance and heuristic considerations.
+
+The Romanian Traveling Salesman Problem (TSP) scenario provides opportunities to pose a variety of search-based questions that span uninformed (blind) and informed (heuristic) search techniques. Here are possible questions categorized under each type of search:
+________________________________________
+Uninformed (Blind) Search Questions
+Uninformed search algorithms explore the search space without prior knowledge about the goal or cost to reach it. Examples include Breadth-First Search (BFS), Depth-First Search (DFS), and Uniform Cost Search (UCS).
+1.	Pathfinding Without Cost Heuristics:
+o	"Find a route from Bucharest to Cluj-Napoca visiting all cities exactly once."
+o	Algorithm: Use Depth-First Search (DFS) to explore all possible routes.
+2.	Finding Any Path:
+o	"Determine a path from Bucharest to Constanta that passes through at least 5 cities."
+o	Algorithm: Breadth-First Search (BFS) or DFS with a depth limit.
+3.	Enumerating All Solutions:
+o	"List all possible routes that start in Timisoara and end in Iasi, visiting each city exactly once."
+o	Algorithm: Use DFS or iterative deepening to explore every permutation of cities.
+4.	Cheapest Path Without Heuristics:
+o	"Find the route with the least total distance starting from Brasov and returning to Brasov."
+o	Algorithm: Uniform Cost Search (UCS).
+________________________________________
+Informed (Heuristic) Search Questions
+Informed search algorithms use heuristics to guide the search toward the goal more efficiently. Examples include Greedy Best-First Search and A*.
+1.	Optimal Path Using Distance Heuristics:
+o	"Find the shortest route from Oradea to Galati, assuming straight-line distances as the heuristic."
+o	Algorithm: A* Search with straight-line distance as the heuristic.
+2.	TSP Heuristic Approximation:
+o	"Using a heuristic, approximate the shortest route that visits all cities starting from Bucharest."
+o	Algorithm: Greedy Best-First Search with a heuristic based on the nearest neighbor.
+3.	Comparing Efficiency:
+o	"Compare the performance of A* and Greedy Best-First Search in finding the shortest route from Craiova to Constanta."
+o	Task: Use A* with a heuristic based on straight-line distance and compare it to Greedy Best-First Search.
+4.	Shortest Detour:
+o	"Find the shortest path from Sibiu to Constanta, but you must pass through Timisoara."
+o	Algorithm: A* or heuristic-guided pathfinding that minimizes total travel distance.
+5.	Finding Suboptimal Solutions Quickly:
+o	"Using a heuristic, find a reasonably short route that visits all cities and returns to the starting city."
+o	Algorithm: Apply Greedy Best-First Search with a nearest-neighbor heuristic.
+________________________________________
+Generic TSP Questions
+These can use either uninformed or informed search depending on the constraints.
+1.	Cycle Detection:
+o	"Does the graph of Romanian cities contain cycles?"
+o	Algorithm: DFS or BFS.
+2.	Route Optimization:
+o	"What is the optimal way to visit all cities starting and ending at Bucharest?"
+o	Algorithms: Brute-force search (uninformed) or dynamic programming with heuristics (informed).
+3.	Most Efficient Start Point:
+o	"Which city is the best starting point for the shortest TSP route?"
+o	Algorithm: Run TSP multiple times with different starting points, comparing results (requires informed heuristics to be efficient).
+4.	Intermediate Stop Optimization:
+o	"If I need to visit Brasov and Galati, what is the shortest route starting at Bucharest?"
+o	Algorithm: Use A* with a heuristic based on the remaining distance to unvisited cities.
+________________________________________
+Key Algorithms
+•	Uninformed Search:
+o	BFS for finding all possible paths.
+o	DFS for enumerating potential solutions.
+o	UCS for cheapest cost paths.
+•	Informed Search:
+o	A* with straight-line distances or other heuristics for optimal solutions.
+o	Greedy Best-First for faster but possibly suboptimal routes.
+o	Dynamic Programming (e.g., Held-Karp) for exact TSP solutions with cost optimization.
+
