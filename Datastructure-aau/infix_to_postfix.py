@@ -35,7 +35,7 @@ def infix_to_postfix(infix):
                 stack.append(e)
        else:
            postfix.append(e)
-    
+     
     while stack:
         postfix.append(stack.pop())
     return postfix

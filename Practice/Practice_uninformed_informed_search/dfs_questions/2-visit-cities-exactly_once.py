@@ -33,13 +33,11 @@ def dfs(current_city,  total_distance):
 	fill_path(visited, total_distance)
 	visited.pop()
 	
-	
-start = "Bahir Dar"
+start = "Addis Ababa"
 statistics = []
 
 # dfs(start, 0)
 # print(all_paths)
-
 
     
 max_distance = []
@@ -55,5 +53,6 @@ for path_info in all_paths:
 print(f'maximum distance that can be traveled  => {max(max_distance)}')
 
 # Find the maximum distance that can be traveled by the sales man starting from any location
+
 
     

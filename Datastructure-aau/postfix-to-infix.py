@@ -39,5 +39,5 @@ if __name__ == "__main__":
     for postfix in postfixs:
         result = postfix_to_infix(postfix)
         print(f"Postfix: {postfix} -> Infix: {result}")
-
+        
     

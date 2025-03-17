@@ -1,0 +1,1000 @@
+Year,ID,Name,Ideal.point
+1946,USA,United States of America,1.714
+1946,CAN,Canada,1.849
+1946,CUB,Cuba,1.214
+1946,HAI,Haiti,0.627
+1946,DOM,Dominican Republic,1.554
+1946,MEX,Mexico,0.894
+1946,GUA,Guatemala,0.448
+1946,HON,Honduras,1.218
+1946,SAL,El Salvador,1.98
+1946,NIC,Nicaragua,2.086
+1946,COS,Costa Rica,2.044
+1946,PAN,Panama,1.236
+1946,COL,Colombia,0.309
+1946,VEN,Venezuela,0.651
+1946,ECU,Ecuador,0.975
+1946,PER,Peru,1.879
+1946,BRA,Brazil,1.574
+1946,BOL,Bolivia,1.376
+1946,PAR,Paraguay,2.142
+1946,CHL,Chile,0.846
+1946,ARG,Argentina,1.841
+1946,URU,Uruguay,1.468
+1946,UKG,United Kingdom,2.158
+1946,NTH,Netherlands,2.011
+1946,BEL,Belgium,1.732
+1946,LUX,Luxembourg,1.819
+1946,FRN,France,0.894
+1946,POL,Poland,-1.606
+1946,CZE,Czechoslovakia,-0.796
+1946,YUG,Yugoslavia,-2.303
+1946,GRC,Greece,2.021
+1946,RUS,Russia,-2.296
+1946,UKR,Ukraine,-2.368
+1946,BLR,Belarus,-2.324
+1946,SWD,Sweden,1.262
+1946,NOR,Norway,0.966
+1946,DEN,Denmark,1.231
+1946,ICE,Iceland,1.209
+1946,LBR,Liberia,-0.192
+1946,ETH,Ethiopia,0.441
+1946,SAF,South Africa,1.834
+1946,IRN,Iran,0.757
+1946,TUR,Turkey,1.619
+1946,IRQ,Iraq,0.703
+1946,EGY,Egypt,0.729
+1946,SYR,Syria,0.825
+1946,LEB,Lebanon,1.009
+1946,SAU,Saudi Arabia,0.756
+1946,AFG,Afghanistan,0.669
+1946,TAW,Taiwan,0.741
+1946,IND,India,-0.043
+1946,PHI,Philippines,0.93
+1946,AUL,Australia,1.527
+1946,NEW,New Zealand,1.621
+1947,USA,United States of America,1.813
+1947,CAN,Canada,1.987
+1947,CUB,Cuba,1.059
+1947,HAI,Haiti,0.448
+1947,DOM,Dominican Republic,1.722
+1947,MEX,Mexico,0.735
+1947,GUA,Guatemala,0.341
+1947,HON,Honduras,1.047
+1947,SAL,El Salvador,1.903
+1947,NIC,Nicaragua,2.202
+1947,COS,Costa Rica,2.133
+1947,PAN,Panama,1.013
+1947,COL,Colombia,0.723
+1947,VEN,Venezuela,0.834
+1947,ECU,Ecuador,1.251
+1947,PER,Peru,1.699
+1947,BRA,Brazil,1.565
+1947,BOL,Bolivia,1.439
+1947,PAR,Paraguay,2.177
+1947,CHL,Chile,1.106
+1947,ARG,Argentina,1.966
+1947,URU,Uruguay,1.472
+1947,UKG,United Kingdom,2.119
+1947,NTH,Netherlands,1.928
+1947,BEL,Belgium,1.822
+1947,LUX,Luxembourg,1.765
+1947,FRN,France,1.157
+1947,POL,Poland,-1.667
+1947,CZE,Czechoslovakia,-1.103
+1947,YUG,Yugoslavia,-2.282
+1947,GRC,Greece,2.099
+1947,RUS,Russia,-2.264
+1947,UKR,Ukraine,-2.325
+1947,BLR,Belarus,-2.279
+1947,SWD,Sweden,1.274
+1947,NOR,Norway,1.168
+1947,DEN,Denmark,1.315
+1947,ICE,Iceland,1.273
+1947,LBR,Liberia,0.293
+1947,ETH,Ethiopia,0.066
+1947,SAF,South Africa,1.96
+1947,IRN,Iran,0.517
+1947,TUR,Turkey,1.383
+1947,IRQ,Iraq,0.533
+1947,EGY,Egypt,0.507
+1947,SYR,Syria,0.484
+1947,LEB,Lebanon,0.584
+1947,SAU,Saudi Arabia,0.466
+1947,YAR,Yemen Arab Republic,0.354
+1947,AFG,Afghanistan,0.372
+1947,TAW,Taiwan,0.653
+1947,IND,India,-0.225
+1947,PAK,Pakistan,0.355
+1947,THI,Thailand,0.778
+1947,PHI,Philippines,0.711
+1947,AUL,Australia,1.738
+1947,NEW,New Zealand,1.581
+1948,USA,United States of America,1.936
+1948,CAN,Canada,1.911
+1948,CUB,Cuba,0.877
+1948,HAI,Haiti,0.66
+1948,DOM,Dominican Republic,1.639
+1948,MEX,Mexico,0.778
+1948,GUA,Guatemala,0.38
+1948,HON,Honduras,1.305
+1948,SAL,El Salvador,1.49
+1948,NIC,Nicaragua,1.98
+1948,COS,Costa Rica,1.122
+1948,PAN,Panama,1.31
+1948,COL,Colombia,1.019
+1948,VEN,Venezuela,0.669
+1948,ECU,Ecuador,1.002
+1948,PER,Peru,1.636
+1948,BRA,Brazil,1.351
+1948,BOL,Bolivia,1.474
+1948,PAR,Paraguay,1.602
+1948,CHL,Chile,1.209
+1948,ARG,Argentina,0.933
+1948,URU,Uruguay,1.031
+1948,UKG,United Kingdom,2.074
+1948,NTH,Netherlands,2.104
+1948,BEL,Belgium,1.852
+1948,LUX,Luxembourg,1.955
+1948,FRN,France,1.17
+1948,POL,Poland,-2.085
+1948,CZE,Czechoslovakia,-1.92
+1948,YUG,Yugoslavia,-2.323
+1948,GRC,Greece,1.972
+1948,RUS,Russia,-2.401
+1948,UKR,Ukraine,-2.438
+1948,BLR,Belarus,-2.394
+1948,SWD,Sweden,1.365
+1948,NOR,Norway,1.585
+1948,DEN,Denmark,1.611
+1948,ICE,Iceland,1.872
+1948,LBR,Liberia,0.743
+1948,ETH,Ethiopia,0.661
+1948,SAF,South Africa,1.443
+1948,IRN,Iran,0.424
+1948,TUR,Turkey,1.497
+1948,IRQ,Iraq,0.248
+1948,EGY,Egypt,0.684
+1948,SYR,Syria,0.322
+1948,LEB,Lebanon,0.666
+1948,ISR,Israel,0.458
+1948,SAU,Saudi Arabia,0.421
+1948,YAR,Yemen Arab Republic,0.267
+1948,AFG,Afghanistan,0.125
+1948,TAW,Taiwan,0.828
+1948,IND,India,0.239
+1948,PAK,Pakistan,0.231
+1948,MYA,Myanmar,0.212
+1948,THI,Thailand,0.905
+1948,PHI,Philippines,0.617
+1948,AUL,Australia,1.507
+1948,NEW,New Zealand,1.381
+1949,USA,United States of America,1.877
+1949,CAN,Canada,1.672
+1949,CUB,Cuba,0.8
+1949,HAI,Haiti,0.623
+1949,DOM,Dominican Republic,1.329
+1949,MEX,Mexico,0.589
+1949,GUA,Guatemala,0.453
+1949,HON,Honduras,1.175
+1949,SAL,El Salvador,1.229
+1949,NIC,Nicaragua,1.419
+1949,COS,Costa Rica,1.145
+1949,PAN,Panama,1.383
+1949,COL,Colombia,1.126
+1949,VEN,Venezuela,0.746
+1949,ECU,Ecuador,0.769
+1949,PER,Peru,1.346
+1949,BRA,Brazil,0.911
+1949,BOL,Bolivia,1.375
+1949,PAR,Paraguay,1.517
+1949,CHL,Chile,1.297
+1949,ARG,Argentina,1.028
+1949,URU,Uruguay,0.875
+1949,UKG,United Kingdom,2.039
+1949,NTH,Netherlands,2.294
+1949,BEL,Belgium,2.299
+1949,LUX,Luxembourg,2.08
+1949,FRN,France,1.504
+1949,POL,Poland,-2.279
+1949,CZE,Czechoslovakia,-2.163
+1949,YUG,Yugoslavia,-1.733
+1949,GRC,Greece,1.745
+1949,RUS,Russia,-2.501
+1949,UKR,Ukraine,-2.521
+1949,BLR,Belarus,-2.503
+1949,SWD,Sweden,1.432
+1949,NOR,Norway,1.709
+1949,DEN,Denmark,1.849
+1949,ICE,Iceland,1.7
+1949,LBR,Liberia,0.665
+1949,ETH,Ethiopia,0.499
+1949,SAF,South Africa,1.938
+1949,IRN,Iran,0.474
+1949,TUR,Turkey,1.649
+1949,IRQ,Iraq,0.26
+1949,EGY,Egypt,0.326
+1949,SYR,Syria,0.246
+1949,LEB,Lebanon,0.405
+1949,ISR,Israel,0.609
+1949,SAU,Saudi Arabia,0.22
+1949,YAR,Yemen Arab Republic,-0.001
+1949,AFG,Afghanistan,-0.05
+1949,TAW,Taiwan,0.969
+1949,IND,India,0.203
+1949,PAK,Pakistan,0.354
+1949,MYA,Myanmar,0.434
+1949,THI,Thailand,0.923
+1949,PHI,Philippines,0.53
+1949,AUL,Australia,1.504
+1949,NEW,New Zealand,1.477
+1950,USA,United States of America,1.811
+1950,CAN,Canada,1.812
+1950,CUB,Cuba,0.667
+1950,HAI,Haiti,0.837
+1950,DOM,Dominican Republic,1.462
+1950,MEX,Mexico,0.498
+1950,GUA,Guatemala,0.62
+1950,HON,Honduras,1.223
+1950,SAL,El Salvador,0.995
+1950,NIC,Nicaragua,1.38
+1950,COS,Costa Rica,1.44
+1950,PAN,Panama,1.262
+1950,COL,Colombia,1.217
+1950,VEN,Venezuela,0.95
+1950,ECU,Ecuador,0.909
+1950,PER,Peru,1.489
+1950,BRA,Brazil,1.084
+1950,BOL,Bolivia,1.409
+1950,PAR,Paraguay,1.505
+1950,CHL,Chile,1.176
+1950,ARG,Argentina,0.84
+1950,URU,Uruguay,0.63
+1950,UKG,United Kingdom,1.574
+1950,NTH,Netherlands,2.234
+1950,BEL,Belgium,2.355
+1950,LUX,Luxembourg,2.183
+1950,FRN,France,1.492
+1950,POL,Poland,-2.421
+1950,CZE,Czechoslovakia,-2.33
+1950,YUG,Yugoslavia,-1.095
+1950,GRC,Greece,1.786
+1950,RUS,Russia,-2.569
+1950,UKR,Ukraine,-2.581
+1950,BLR,Belarus,-2.553
+1950,SWD,Sweden,1.411
+1950,NOR,Norway,1.508
+1950,DEN,Denmark,1.595
+1950,ICE,Iceland,1.568
+1950,LBR,Liberia,0.556
+1950,ETH,Ethiopia,0.684
+1950,SAF,South Africa,2.17
+1950,IRN,Iran,0.41
+1950,TUR,Turkey,1.523
+1950,IRQ,Iraq,0.311
+1950,EGY,Egypt,-0.076
+1950,SYR,Syria,-0.121
+1950,LEB,Lebanon,0.251
+1950,ISR,Israel,0.623
+1950,SAU,Saudi Arabia,-0.026
+1950,YAR,Yemen Arab Republic,-0.13
+1950,AFG,Afghanistan,-0.183
+1950,TAW,Taiwan,0.984
+1950,IND,India,-0.069
+1950,PAK,Pakistan,0.303
+1950,MYA,Myanmar,0.049
+1950,THI,Thailand,1.17
+1950,PHI,Philippines,0.603
+1950,INS,Indonesia,-0.303
+1950,AUL,Australia,1.466
+1950,NEW,New Zealand,1.65
+1951,USA,United States of America,1.828
+1951,CAN,Canada,1.916
+1951,CUB,Cuba,0.745
+1951,HAI,Haiti,0.764
+1951,DOM,Dominican Republic,1.114
+1951,MEX,Mexico,0.329
+1951,GUA,Guatemala,0.317
+1951,HON,Honduras,1.184
+1951,SAL,El Salvador,0.88
+1951,NIC,Nicaragua,1.526
+1951,COS,Costa Rica,1.559
+1951,PAN,Panama,1.149
+1951,COL,Colombia,1.065
+1951,VEN,Venezuela,1.099
+1951,ECU,Ecuador,0.667
+1951,PER,Peru,1.432
+1951,BRA,Brazil,1.186
+1951,BOL,Bolivia,1.176
+1951,PAR,Paraguay,1.436
+1951,CHL,Chile,0.844
+1951,ARG,Argentina,0.848
+1951,URU,Uruguay,0.783
+1951,UKG,United Kingdom,1.832
+1951,NTH,Netherlands,2.294
+1951,BEL,Belgium,2.319
+1951,LUX,Luxembourg,2.242
+1951,FRN,France,1.652
+1951,POL,Poland,-2.43
+1951,CZE,Czechoslovakia,-2.364
+1951,YUG,Yugoslavia,-0.838
+1951,GRC,Greece,1.48
+1951,RUS,Russia,-2.56
+1951,UKR,Ukraine,-2.57
+1951,BLR,Belarus,-2.561
+1951,SWD,Sweden,1.536
+1951,NOR,Norway,1.488
+1951,DEN,Denmark,1.576
+1951,ICE,Iceland,1.479
+1951,LBR,Liberia,0.494
+1951,ETH,Ethiopia,0.433
+1951,SAF,South Africa,2.17
+1951,IRN,Iran,0.28
+1951,TUR,Turkey,1.578
+1951,IRQ,Iraq,0.289
+1951,EGY,Egypt,-0.068
+1951,SYR,Syria,-0.104
+1951,LEB,Lebanon,0.315
+1951,ISR,Israel,0.915
+1951,SAU,Saudi Arabia,-0.022
+1951,YAR,Yemen Arab Republic,-0.26
+1951,AFG,Afghanistan,-0.163
+1951,TAW,Taiwan,1.122
+1951,IND,India,0.271
+1951,PAK,Pakistan,0.211
+1951,MYA,Myanmar,-0.106
+1951,THI,Thailand,1.084
+1951,PHI,Philippines,0.52
+1951,INS,Indonesia,-0.414
+1951,AUL,Australia,1.771
+1951,NEW,New Zealand,1.869
+1952,USA,United States of America,1.905
+1952,CAN,Canada,1.989
+1952,CUB,Cuba,0.984
+1952,HAI,Haiti,0.608
+1952,DOM,Dominican Republic,1.25
+1952,MEX,Mexico,0.471
+1952,GUA,Guatemala,0.122
+1952,HON,Honduras,0.673
+1952,SAL,El Salvador,0.548
+1952,NIC,Nicaragua,1.35
+1952,COS,Costa Rica,1.02
+1952,PAN,Panama,0.958
+1952,COL,Colombia,1.195
+1952,VEN,Venezuela,1.104
+1952,ECU,Ecuador,0.866
+1952,PER,Peru,1.411
+1952,BRA,Brazil,0.986
+1952,BOL,Bolivia,0.558
+1952,PAR,Paraguay,1.321
+1952,CHL,Chile,0.654
+1952,ARG,Argentina,0.736
+1952,URU,Uruguay,0.879
+1952,UKG,United Kingdom,2.106
+1952,NTH,Netherlands,2.192
+1952,BEL,Belgium,2.259
+1952,LUX,Luxembourg,2.189
+1952,FRN,France,2.096
+1952,POL,Poland,-2.41
+1952,CZE,Czechoslovakia,-2.418
+1952,YUG,Yugoslavia,-0.05
+1952,GRC,Greece,1.443
+1952,RUS,Russia,-2.512
+1952,UKR,Ukraine,-2.475
+1952,BLR,Belarus,-2.498
+1952,SWD,Sweden,1.442
+1952,NOR,Norway,1.684
+1952,DEN,Denmark,1.681
+1952,ICE,Iceland,1.72
+1952,LBR,Liberia,0.303
+1952,ETH,Ethiopia,0.298
+1952,SAF,South Africa,2.543
+1952,IRN,Iran,-0.167
+1952,TUR,Turkey,1.635
+1952,IRQ,Iraq,0.208
+1952,EGY,Egypt,-0.259
+1952,SYR,Syria,-0.285
+1952,LEB,Lebanon,0.445
+1952,ISR,Israel,1.016
+1952,SAU,Saudi Arabia,-0.381
+1952,YAR,Yemen Arab Republic,-0.376
+1952,AFG,Afghanistan,-0.377
+1952,TAW,Taiwan,0.962
+1952,IND,India,-0.169
+1952,PAK,Pakistan,-0.04
+1952,MYA,Myanmar,-0.341
+1952,THI,Thailand,1.013
+1952,PHI,Philippines,0.515
+1952,INS,Indonesia,-0.549
+1952,AUL,Australia,2.082
+1952,NEW,New Zealand,2.126
+1953,USA,United States of America,1.693
+1953,CAN,Canada,1.745
+1953,CUB,Cuba,1.044
+1953,HAI,Haiti,0.819
+1953,DOM,Dominican Republic,1.528
+1953,MEX,Mexico,0.319
+1953,GUA,Guatemala,0.091
+1953,HON,Honduras,0.969
+1953,SAL,El Salvador,0.747
+1953,NIC,Nicaragua,1.303
+1953,COS,Costa Rica,1.086
+1953,PAN,Panama,1.333
+1953,COL,Colombia,1.673
+1953,VEN,Venezuela,1.068
+1953,ECU,Ecuador,1.018
+1953,PER,Peru,1.326
+1953,BRA,Brazil,1.015
+1953,BOL,Bolivia,0.404
+1953,PAR,Paraguay,1.314
+1953,CHL,Chile,0.952
+1953,ARG,Argentina,0.852
+1953,URU,Uruguay,0.586
+1953,UKG,United Kingdom,2.193
+1953,NTH,Netherlands,2.197
+1953,BEL,Belgium,2.359
+1953,LUX,Luxembourg,2.324
+1953,FRN,France,2.201
+1953,POL,Poland,-2.393
+1953,CZE,Czechoslovakia,-2.407
+1953,YUG,Yugoslavia,-0.138
+1953,GRC,Greece,1.372
+1953,RUS,Russia,-2.496
+1953,UKR,Ukraine,-2.467
+1953,BLR,Belarus,-2.489
+1953,SWD,Sweden,1.26
+1953,NOR,Norway,1.304
+1953,DEN,Denmark,1.342
+1953,ICE,Iceland,1.148
+1953,LBR,Liberia,0.246
+1953,ETH,Ethiopia,0.281
+1953,SAF,South Africa,2.65
+1953,IRN,Iran,-0.12
+1953,TUR,Turkey,1.607
+1953,IRQ,Iraq,0.033
+1953,EGY,Egypt,-0.32
+1953,SYR,Syria,-0.326
+1953,LEB,Lebanon,0.258
+1953,ISR,Israel,1.104
+1953,SAU,Saudi Arabia,-0.381
+1953,YAR,Yemen Arab Republic,-0.388
+1953,AFG,Afghanistan,-0.386
+1953,TAW,Taiwan,0.818
+1953,IND,India,-0.147
+1953,PAK,Pakistan,-0.096
+1953,MYA,Myanmar,-0.43
+1953,THI,Thailand,0.661
+1953,PHI,Philippines,0.374
+1953,INS,Indonesia,-0.482
+1953,AUL,Australia,2.203
+1953,NEW,New Zealand,2.071
+1954,USA,United States of America,1.482
+1954,CAN,Canada,1.746
+1954,CUB,Cuba,1.019
+1954,HAI,Haiti,0.737
+1954,DOM,Dominican Republic,1.477
+1954,MEX,Mexico,0.306
+1954,GUA,Guatemala,0.455
+1954,HON,Honduras,0.62
+1954,SAL,El Salvador,0.443
+1954,NIC,Nicaragua,1.082
+1954,COS,Costa Rica,0.755
+1954,PAN,Panama,1.166
+1954,COL,Colombia,1.773
+1954,VEN,Venezuela,0.974
+1954,ECU,Ecuador,0.554
+1954,PER,Peru,1.351
+1954,BRA,Brazil,1.378
+1954,BOL,Bolivia,0.337
+1954,PAR,Paraguay,0.864
+1954,CHL,Chile,0.906
+1954,ARG,Argentina,0.829
+1954,URU,Uruguay,0.467
+1954,UKG,United Kingdom,2.391
+1954,NTH,Netherlands,2.225
+1954,BEL,Belgium,2.53
+1954,LUX,Luxembourg,2.386
+1954,FRN,France,2.402
+1954,POL,Poland,-2.427
+1954,CZE,Czechoslovakia,-2.424
+1954,YUG,Yugoslavia,-0.295
+1954,GRC,Greece,0.744
+1954,RUS,Russia,-2.498
+1954,UKR,Ukraine,-2.47
+1954,BLR,Belarus,-2.479
+1954,SWD,Sweden,1.443
+1954,NOR,Norway,1.364
+1954,DEN,Denmark,1.522
+1954,ICE,Iceland,1.032
+1954,LBR,Liberia,0.242
+1954,ETH,Ethiopia,0.385
+1954,SAF,South Africa,2.525
+1954,IRN,Iran,0.076
+1954,TUR,Turkey,1.782
+1954,IRQ,Iraq,0.128
+1954,EGY,Egypt,-0.169
+1954,SYR,Syria,-0.402
+1954,LEB,Lebanon,0.302
+1954,ISR,Israel,1.171
+1954,SAU,Saudi Arabia,-0.382
+1954,YAR,Yemen Arab Republic,-0.427
+1954,AFG,Afghanistan,-0.331
+1954,TAW,Taiwan,1.122
+1954,IND,India,-0.288
+1954,PAK,Pakistan,0.198
+1954,MYA,Myanmar,-0.581
+1954,THI,Thailand,0.555
+1954,PHI,Philippines,0.305
+1954,INS,Indonesia,-0.467
+1954,AUL,Australia,2.414
+1954,NEW,New Zealand,2.102
+1955,USA,United States of America,1.719
+1955,CAN,Canada,1.714
+1955,CUB,Cuba,1.439
+1955,HAI,Haiti,0.682
+1955,DOM,Dominican Republic,1.53
+1955,MEX,Mexico,0.352
+1955,GUA,Guatemala,0.319
+1955,HON,Honduras,0.968
+1955,SAL,El Salvador,0.4
+1955,NIC,Nicaragua,1.471
+1955,COS,Costa Rica,0.637
+1955,PAN,Panama,1.212
+1955,COL,Colombia,1.727
+1955,VEN,Venezuela,1.069
+1955,ECU,Ecuador,0.559
+1955,PER,Peru,1.284
+1955,BRA,Brazil,1.568
+1955,BOL,Bolivia,0.344
+1955,PAR,Paraguay,0.862
+1955,CHL,Chile,0.946
+1955,ARG,Argentina,0.645
+1955,URU,Uruguay,0.303
+1955,UKG,United Kingdom,2.209
+1955,NTH,Netherlands,2.189
+1955,BEL,Belgium,2.219
+1955,LUX,Luxembourg,2.325
+1955,FRN,France,2.392
+1955,SPN,Spain,1.121
+1955,POL,Poland,-2.458
+1955,HUN,Hungary,-2.653
+1955,CZE,Czechoslovakia,-2.474
+1955,YUG,Yugoslavia,-0.495
+1955,GRC,Greece,0.727
+1955,ROM,Romania,-2.65
+1955,RUS,Russia,-2.536
+1955,UKR,Ukraine,-2.506
+1955,BLR,Belarus,-2.512
+1955,SWD,Sweden,1.31
+1955,NOR,Norway,1.319
+1955,DEN,Denmark,1.387
+1955,ICE,Iceland,1.052
+1955,LBR,Liberia,0.23
+1955,ETH,Ethiopia,0.382
+1955,SAF,South Africa,2.506
+1955,IRN,Iran,0.106
+1955,TUR,Turkey,1.596
+1955,IRQ,Iraq,0.22
+1955,EGY,Egypt,-0.283
+1955,SYR,Syria,-0.596
+1955,LEB,Lebanon,0.154
+1955,JOR,Jordan,-0.789
+1955,ISR,Israel,1.326
+1955,SAU,Saudi Arabia,-0.475
+1955,YAR,Yemen Arab Republic,-0.557
+1955,AFG,Afghanistan,-0.551
+1955,TAW,Taiwan,1.266
+1955,IND,India,-0.397
+1955,PAK,Pakistan,0.361
+1955,MYA,Myanmar,-0.467
+1955,SRI,Sri Lanka,-0.178
+1955,THI,Thailand,0.614
+1955,PHI,Philippines,0.507
+1955,INS,Indonesia,-0.387
+1955,AUL,Australia,2.249
+1955,NEW,New Zealand,1.941
+1956,USA,United States of America,1.285
+1956,CAN,Canada,1.554
+1956,CUB,Cuba,1.264
+1956,HAI,Haiti,0.6
+1956,DOM,Dominican Republic,1.554
+1956,MEX,Mexico,0.63
+1956,GUA,Guatemala,0.546
+1956,HON,Honduras,1.041
+1956,SAL,El Salvador,0.608
+1956,NIC,Nicaragua,1.187
+1956,COS,Costa Rica,0.869
+1956,PAN,Panama,0.97
+1956,COL,Colombia,1.313
+1956,VEN,Venezuela,0.968
+1956,ECU,Ecuador,0.802
+1956,PER,Peru,1.283
+1956,BRA,Brazil,1.331
+1956,BOL,Bolivia,0.596
+1956,PAR,Paraguay,0.948
+1956,CHL,Chile,1.05
+1956,ARG,Argentina,0.846
+1956,URU,Uruguay,0.726
+1956,UKG,United Kingdom,2.247
+1956,IRE,Ireland,1.119
+1956,NTH,Netherlands,2.05
+1956,BEL,Belgium,2.044
+1956,LUX,Luxembourg,2.128
+1956,FRN,France,2.447
+1956,SPN,Spain,1.129
+1956,POR,Portugal,1.65
+1956,POL,Poland,-2.474
+1956,AUS,Austria,0.57
+1956,HUN,Hungary,-2.654
+1956,CZE,Czechoslovakia,-2.523
+1956,ITA,Italy,1.775
+1956,ALB,Albania,-2.582
+1956,YUG,Yugoslavia,-1.074
+1956,GRC,Greece,0.617
+1956,BUL,Bulgaria,-2.575
+1956,ROM,Romania,-2.655
+1956,RUS,Russia,-2.558
+1956,UKR,Ukraine,-2.562
+1956,BLR,Belarus,-2.541
+1956,FIN,Finland,0.336
+1956,SWD,Sweden,1.189
+1956,NOR,Norway,1.185
+1956,DEN,Denmark,1.328
+1956,ICE,Iceland,1.31
+1956,LBR,Liberia,0.501
+1956,GHA,Ghana,-0.605
+1956,ETH,Ethiopia,0.354
+1956,SAF,South Africa,1.986
+1956,MOR,Morocco,-0.528
+1956,TUN,Tunisia,0.049
+1956,LIB,Libya,-0.317
+1956,SUD,Sudan,-0.722
+1956,IRN,Iran,0.421
+1956,TUR,Turkey,1.382
+1956,IRQ,Iraq,0.338
+1956,EGY,Egypt,-0.761
+1956,SYR,Syria,-0.901
+1956,LEB,Lebanon,-0.196
+1956,JOR,Jordan,-0.885
+1956,ISR,Israel,1.593
+1956,SAU,Saudi Arabia,-0.667
+1956,YAR,Yemen Arab Republic,-0.736
+1956,AFG,Afghanistan,-0.577
+1956,TAW,Taiwan,1.365
+1956,JPN,Japan,0.699
+1956,IND,India,-0.65
+1956,PAK,Pakistan,0.706
+1956,MYA,Myanmar,-0.216
+1956,SRI,Sri Lanka,-0.209
+1956,NEP,Nepal,-0.064
+1956,THI,Thailand,0.823
+1956,CAM,Cambodia,0.126
+1956,LAO,Laos,0.784
+1956,PHI,Philippines,0.769
+1956,INS,Indonesia,-0.526
+1956,AUL,Australia,2.222
+1956,NEW,New Zealand,2.058
+1957,USA,United States of America,1.247
+1957,CAN,Canada,1.608
+1957,CUB,Cuba,1.234
+1957,HAI,Haiti,0.399
+1957,DOM,Dominican Republic,1.728
+1957,MEX,Mexico,0.338
+1957,GUA,Guatemala,0.215
+1957,HON,Honduras,1.19
+1957,SAL,El Salvador,0.65
+1957,NIC,Nicaragua,1.428
+1957,COS,Costa Rica,0.607
+1957,PAN,Panama,0.746
+1957,COL,Colombia,1.244
+1957,VEN,Venezuela,1.006
+1957,ECU,Ecuador,0.79
+1957,PER,Peru,1.102
+1957,BRA,Brazil,1.139
+1957,BOL,Bolivia,0.39
+1957,PAR,Paraguay,1.039
+1957,CHL,Chile,1.187
+1957,ARG,Argentina,1.237
+1957,URU,Uruguay,0.667
+1957,UKG,United Kingdom,2.225
+1957,IRE,Ireland,0.736
+1957,NTH,Netherlands,2.038
+1957,BEL,Belgium,2.162
+1957,LUX,Luxembourg,2.185
+1957,FRN,France,2.386
+1957,SPN,Spain,1.397
+1957,POR,Portugal,1.697
+1957,POL,Poland,-2.503
+1957,AUS,Austria,0.921
+1957,HUN,Hungary,-2.634
+1957,CZE,Czechoslovakia,-2.488
+1957,ITA,Italy,1.846
+1957,ALB,Albania,-2.579
+1957,YUG,Yugoslavia,-0.966
+1957,GRC,Greece,0.394
+1957,BUL,Bulgaria,-2.581
+1957,ROM,Romania,-2.64
+1957,RUS,Russia,-2.557
+1957,UKR,Ukraine,-2.582
+1957,BLR,Belarus,-2.573
+1957,FIN,Finland,0.699
+1957,SWD,Sweden,1.117
+1957,NOR,Norway,1.18
+1957,DEN,Denmark,1.229
+1957,ICE,Iceland,1.304
+1957,LBR,Liberia,0.621
+1957,GHA,Ghana,-0.606
+1957,ETH,Ethiopia,0.132
+1957,SAF,South Africa,2.067
+1957,MOR,Morocco,-0.634
+1957,TUN,Tunisia,0.081
+1957,LIB,Libya,-0.165
+1957,SUD,Sudan,-0.71
+1957,IRN,Iran,0.428
+1957,TUR,Turkey,1.418
+1957,IRQ,Iraq,0.069
+1957,EGY,Egypt,-0.849
+1957,SYR,Syria,-0.954
+1957,LEB,Lebanon,0.102
+1957,JOR,Jordan,-0.444
+1957,ISR,Israel,1.18
+1957,SAU,Saudi Arabia,-0.613
+1957,YAR,Yemen Arab Republic,-0.736
+1957,AFG,Afghanistan,-0.403
+1957,TAW,Taiwan,1.428
+1957,JPN,Japan,0.634
+1957,IND,India,-0.544
+1957,PAK,Pakistan,0.739
+1957,MYA,Myanmar,-0.4
+1957,SRI,Sri Lanka,-0.322
+1957,NEP,Nepal,-0.131
+1957,THI,Thailand,0.777
+1957,CAM,Cambodia,0.134
+1957,LAO,Laos,0.74
+1957,MAL,Malaysia,0.518
+1957,PHI,Philippines,0.879
+1957,INS,Indonesia,-0.583
+1957,AUL,Australia,2.215
+1957,NEW,New Zealand,1.999
+1958,USA,United States of America,1.266
+1958,CAN,Canada,1.579
+1958,CUB,Cuba,1.243
+1958,HAI,Haiti,0.762
+1958,DOM,Dominican Republic,1.846
+1958,MEX,Mexico,0.453
+1958,GUA,Guatemala,0.621
+1958,HON,Honduras,1.04
+1958,SAL,El Salvador,0.844
+1958,NIC,Nicaragua,1.385
+1958,COS,Costa Rica,0.881
+1958,PAN,Panama,0.896
+1958,COL,Colombia,1.149
+1958,VEN,Venezuela,0.972
+1958,ECU,Ecuador,1.01
+1958,PER,Peru,1.062
+1958,BRA,Brazil,1.209
+1958,BOL,Bolivia,0.657
+1958,PAR,Paraguay,1.134
+1958,CHL,Chile,1.122
+1958,ARG,Argentina,1.196
+1958,URU,Uruguay,0.897
+1958,UKG,United Kingdom,2.389
+1958,IRE,Ireland,0.456
+1958,NTH,Netherlands,1.873
+1958,BEL,Belgium,2.41
+1958,LUX,Luxembourg,2.107
+1958,FRN,France,2.327
+1958,SPN,Spain,1.715
+1958,POR,Portugal,1.688
+1958,POL,Poland,-2.536
+1958,AUS,Austria,0.691
+1958,HUN,Hungary,-2.626
+1958,CZE,Czechoslovakia,-2.522
+1958,ITA,Italy,1.744
+1958,ALB,Albania,-2.598
+1958,YUG,Yugoslavia,-1.041
+1958,GRC,Greece,0.344
+1958,BUL,Bulgaria,-2.59
+1958,ROM,Romania,-2.618
+1958,RUS,Russia,-2.574
+1958,UKR,Ukraine,-2.593
+1958,BLR,Belarus,-2.484
+1958,FIN,Finland,0.504
+1958,SWD,Sweden,0.767
+1958,NOR,Norway,0.852
+1958,DEN,Denmark,0.879
+1958,ICE,Iceland,0.893
+1958,GUI,Guinea,-0.895
+1958,LBR,Liberia,0.451
+1958,GHA,Ghana,-0.613
+1958,ETH,Ethiopia,0.091
+1958,SAF,South Africa,2.06
+1958,MOR,Morocco,-0.692
+1958,TUN,Tunisia,0.184
+1958,LIB,Libya,-0.362
+1958,SUD,Sudan,-0.572
+1958,IRN,Iran,0.614
+1958,TUR,Turkey,1.29
+1958,IRQ,Iraq,-0.436
+1958,EGY,Egypt,-0.878
+1958,LEB,Lebanon,0.011
+1958,JOR,Jordan,0.048
+1958,ISR,Israel,0.966
+1958,SAU,Saudi Arabia,-0.516
+1958,YAR,Yemen Arab Republic,-0.827
+1958,AFG,Afghanistan,-0.718
+1958,TAW,Taiwan,1.253
+1958,JPN,Japan,0.71
+1958,IND,India,-0.552
+1958,PAK,Pakistan,0.811
+1958,MYA,Myanmar,-0.355
+1958,SRI,Sri Lanka,-0.447
+1958,NEP,Nepal,-0.194
+1958,THI,Thailand,0.941
+1958,CAM,Cambodia,-0.044
+1958,LAO,Laos,0.804
+1958,MAL,Malaysia,0.51
+1958,PHI,Philippines,0.907
+1958,INS,Indonesia,-0.644
+1958,AUL,Australia,2.324
+1958,NEW,New Zealand,1.502
+1959,USA,United States of America,1.547
+1959,CAN,Canada,1.096
+1959,CUB,Cuba,0.243
+1959,HAI,Haiti,0.979
+1959,DOM,Dominican Republic,1.957
+1959,MEX,Mexico,0.418
+1959,GUA,Guatemala,0.998
+1959,HON,Honduras,1.604
+1959,SAL,El Salvador,0.939
+1959,NIC,Nicaragua,1.661
+1959,COS,Costa Rica,0.932
+1959,PAN,Panama,0.709
+1959,COL,Colombia,1.402
+1959,VEN,Venezuela,0.491
+1959,ECU,Ecuador,0.916
+1959,PER,Peru,1.777
+1959,BRA,Brazil,1.517
+1959,BOL,Bolivia,0.944
+1959,PAR,Paraguay,1.223
+1959,CHL,Chile,1.307
+1959,ARG,Argentina,1.048
+1959,URU,Uruguay,1.234
+1959,UKG,United Kingdom,2.067
+1959,IRE,Ireland,0.384
+1959,NTH,Netherlands,1.766
+1959,BEL,Belgium,2
+1959,LUX,Luxembourg,1.989
+1959,FRN,France,2.114
+1959,SPN,Spain,1.626
+1959,POR,Portugal,1.621
+1959,POL,Poland,-2.443
+1959,AUS,Austria,0.948
+1959,HUN,Hungary,-2.607
+1959,CZE,Czechoslovakia,-2.552
+1959,ITA,Italy,1.768
+1959,ALB,Albania,-2.599
+1959,YUG,Yugoslavia,-1.302
+1959,GRC,Greece,0.906
+1959,BUL,Bulgaria,-2.59
+1959,ROM,Romania,-2.62
+1959,RUS,Russia,-2.578
+1959,UKR,Ukraine,-2.597
+1959,BLR,Belarus,-2.519
+1959,FIN,Finland,0.403
+1959,SWD,Sweden,0.489
+1959,NOR,Norway,0.768
+1959,DEN,Denmark,0.819
+1959,ICE,Iceland,0.574
+1959,GUI,Guinea,-0.89
+1959,LBR,Liberia,0.399
+1959,GHA,Ghana,-0.502
+1959,ETH,Ethiopia,-0.054
+1959,SAF,South Africa,2.239
+1959,MOR,Morocco,-0.902
+1959,TUN,Tunisia,-0.034
+1959,LIB,Libya,-0.382
+1959,SUD,Sudan,-0.497
+1959,IRN,Iran,0.478
+1959,TUR,Turkey,1.063
+1959,IRQ,Iraq,-0.815
+1959,EGY,Egypt,-0.762
+1959,LEB,Lebanon,0.032
+1959,JOR,Jordan,0.139
+1959,ISR,Israel,1.188
+1959,SAU,Saudi Arabia,-0.277
+1959,YAR,Yemen Arab Republic,-0.739
+1959,AFG,Afghanistan,-0.686
+1959,TAW,Taiwan,1.132
+1959,JPN,Japan,0.667
+1959,IND,India,-0.587
+1959,PAK,Pakistan,0.479
+1959,MYA,Myanmar,-0.323
+1959,SRI,Sri Lanka,-0.262
+1959,NEP,Nepal,-0.535
+1959,THI,Thailand,1.061
+1959,CAM,Cambodia,0.176
+1959,LAO,Laos,1.157
+1959,MAL,Malaysia,0.391
+1959,PHI,Philippines,0.631
+1959,INS,Indonesia,-0.655
+1959,AUL,Australia,1.638
+1959,NEW,New Zealand,1.126
+1960,USA,United States of America,1.532
+1960,CAN,Canada,1.106
+1960,CUB,Cuba,-1.264
+1960,HAI,Haiti,0.838
+1960,DOM,Dominican Republic,0.817
+1960,MEX,Mexico,0.278
+1960,GUA,Guatemala,1.027
+1960,HON,Honduras,1.11
+1960,SAL,El Salvador,1.054
+1960,NIC,Nicaragua,1.39
+1960,COS,Costa Rica,1.085
+1960,PAN,Panama,1.01
+1960,COL,Colombia,1.331
+1960,VEN,Venezuela,0.346
+1960,ECU,Ecuador,0.531
+1960,PER,Peru,1.164
+1960,BRA,Brazil,1.044
+1960,BOL,Bolivia,0.807
+1960,PAR,Paraguay,1.011
+1960,CHL,Chile,1.059
+1960,ARG,Argentina,1.08
+1960,URU,Uruguay,0.972
+1960,UKG,United Kingdom,1.899
+1960,IRE,Ireland,0.575
+1960,NTH,Netherlands,1.768
+1960,BEL,Belgium,1.953
+1960,LUX,Luxembourg,1.864
+1960,FRN,France,1.792
+1960,SPN,Spain,1.664
+1960,POR,Portugal,1.515
+1960,POL,Poland,-2.348
+1960,AUS,Austria,0.775
+1960,HUN,Hungary,-2.432
+1960,CZE,Czechoslovakia,-2.412
+1960,ITA,Italy,1.406
+1960,ALB,Albania,-2.344
+1960,YUG,Yugoslavia,-1.311
+1960,GRC,Greece,1.219
+1960,CYP,Cyprus,0.39
+1960,BUL,Bulgaria,-2.413
+1960,ROM,Romania,-2.408
+1960,RUS,Russia,-2.414
+1960,UKR,Ukraine,-2.457
+1960,BLR,Belarus,-2.448
+1960,FIN,Finland,0.372
+1960,SWD,Sweden,0.642
+1960,NOR,Norway,0.904
+1960,DEN,Denmark,0.908
+1960,ICE,Iceland,0.996
+1960,MLI,Mali,-1.511
+1960,SEN,Senegal,0.29
+1960,BEN,Benin,0.589
+1960,NIR,Niger,0.586
+1960,CDI,Ivory Coast,0.573
+1960,GUI,Guinea,-1.471
+1960,BFO,Burkina Faso,0.307
+1960,LBR,Liberia,0.096
+1960,GHA,Ghana,-0.84
+1960,TOG,Togo,-0.185
+1960,CAO,Cameroon,0.562
+1960,NIG,Nigeria,-0.349
+1960,GAB,Gabon,0.604
+1960,CEN,Central African Republic,0.416
+1960,CHA,Chad,0.353
+1960,CON,Congo,0.505
+1960,DRC,Democratic Republic of the Congo,0.569
+1960,SOM,Somalia,-0.058
+1960,ETH,Ethiopia,-0.543
+1960,SAF,South Africa,1.884
+1960,MAG,Madagascar,0.581
+1960,MOR,Morocco,-1.254
+1960,TUN,Tunisia,-0.073
+1960,LIB,Libya,-0.539
+1960,SUD,Sudan,-0.657
+1960,IRN,Iran,0.393
+1960,TUR,Turkey,1.133
+1960,IRQ,Iraq,-1.022
+1960,EGY,Egypt,-1.053

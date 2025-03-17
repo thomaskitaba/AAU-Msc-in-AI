@@ -31,6 +31,7 @@ graph1 = {
     "Gondar": ["Mekele"],  # Adding cycle back to "Bahir Dar"
     "Mekele": ["Addis Ababa", "Gondar"]  # Cycle back to "Addis Ababa"
 }
+
 visited = set()
 count = 0
 # rec_path = []

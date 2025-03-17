@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+print("thomas kitaba")
+import rdflib
+
+# Create a new RDF graph
+graph = rdflib.Graph()
+
+# Define RDF resources (subjects, predicates, objects)
+subject = rdflib.URIRef("http://example.org/AlbertEinstein")
+predicate = rdflib.URIRef("http://example.org/hasBirthplace")
+object = rdflib.Literal("Ulm, Germany")
+
+# Add the triple (subject, predicate, object) to the graph
+graph.add((subject, predicate, object))
+
+# Define another triple for birth year (optional, but we keep it to show more info)
+predicate2 = rdflib.URIRef("http://example.org/hasBornYear")
+object2 = rdflib.Literal("1879")
+graph.add((subject, predicate2, object2))
+
+# Define the SPARQL query to retrieve birthplace of Albert Einstein
+query = """
+    SELECT ?birthplace
+    WHERE {
+        <http://example.org/AlbertEinstein> <http://example.org/hasBirthplace> ?birthplace
+    }
+"""
+query2 = """
+    SELECT ?birthyear
+    WHERE {
+        <http://example.org/AlbertEinstein> <http://example.org/hasBornYear> ?birthyear
+    }
+"""
+# Execute the SPARQL query
+results = graph.query(query)
+results2 = graph.query(query2)
+print(list(results))
+
+# Print the results
+for row in results:
+    print(f"Albert Einstein was born in {row.birthplace}")
+    
+for row in results2:
+    print(f"Albert Einstein was born in {row.birthyear}")

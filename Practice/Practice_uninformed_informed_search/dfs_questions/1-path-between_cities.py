@@ -18,7 +18,6 @@ def dfs(current_city, destination, danger, rec_path, total_distance):
     if current_city not in rec_path:
         rec_path.append(current_city)
     if current_city == danger:
-        
         rec_path.pop()
         return
     if current_city == destination:
@@ -37,7 +36,7 @@ def dfs(current_city, destination, danger, rec_path, total_distance):
     
 start = "Addis Ababa"
 end = "Mekele"
-danger = "Gonder"
+danger = "Safe"
 
 dfs(start, end, danger,  [], 0)
 
@@ -49,5 +48,5 @@ for count, path in enumerate(all_paths):
             print(info, end="")
         else:
             print(f'  Total distance {val}')
-        
+
 
