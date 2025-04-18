@@ -40,7 +40,7 @@ if number_of_duplicate_values > 0:
     
 # Check for Outliers
 # Separate features and label
-X = df.drop(columns=["G3", "G1", "G2"])
+X = df.drop(columns=["G3"])
 y = df["G3"]
 
 # One-hot encode categorical features
@@ -133,37 +133,37 @@ def shap_explanation(model, name):
         else:
             shap.plots.waterfall(shap_values[0])
 
-# def shap_explanation(model, name):
-    print(f"\nSHAP explanation for {name}")
+# # def shap_explanation(model, name):
+#     print(f"\nSHAP explanation for {name}")
     
-    explainer = shap.Explainer(model, X_train)
+#     explainer = shap.Explainer(model, X_train)
 
-    # Use `check_additivity=False` only for tree-based models
-    if isinstance(model, (RandomForestClassifier, XGBClassifier)):
-        shap_values = explainer(X_test, check_additivity=False)
-    else:
-        shap_values = explainer(X_test)
+#     # Use `check_additivity=False` only for tree-based models
+#     if isinstance(model, (RandomForestClassifier, XGBClassifier)):
+#         shap_values = explainer(X_test, check_additivity=False)
+#     else:
+#         shap_values = explainer(X_test)
 
-    sample_idx = 0  # First test sample
-    class_idx = 1   # Class "Pass" (only matters for classification models with multi-class output)
+#     sample_idx = 0  # First test sample
+#     class_idx = 1   # Class "Pass" (only matters for classification models with multi-class output)
 
-    # Handle multi-class (3D) SHAP values
-    if len(shap_values.values.shape) == 3:
-        single_explanation = shap.Explanation(
-            values=shap_values.values[sample_idx, class_idx],
-            base_values=shap_values.base_values[sample_idx, class_idx],
-            data=shap_values.data[sample_idx],
-            feature_names=shap_values.feature_names
-        )
-    else:
-        single_explanation = shap.Explanation(
-            values=shap_values.values[sample_idx],
-            base_values=shap_values.base_values[sample_idx],
-            data=shap_values.data[sample_idx],
-            feature_names=shap_values.feature_names
-        )
+#     # Handle multi-class (3D) SHAP values
+#     if len(shap_values.values.shape) == 3:
+#         single_explanation = shap.Explanation(
+#             values=shap_values.values[sample_idx, class_idx],
+#             base_values=shap_values.base_values[sample_idx, class_idx],
+#             data=shap_values.data[sample_idx],
+#             feature_names=shap_values.feature_names
+#         )
+#     else:
+#         single_explanation = shap.Explanation(
+#             values=shap_values.values[sample_idx],
+#             base_values=shap_values.base_values[sample_idx],
+#             data=shap_values.data[sample_idx],
+#             feature_names=shap_values.feature_names
+#         )
 
-    shap.plots.waterfall(single_explanation)
+#     shap.plots.waterfall(single_explanation)
 
 
 
