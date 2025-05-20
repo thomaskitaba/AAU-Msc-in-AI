@@ -17,6 +17,9 @@ import shap
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+# To deploy the model
+import streamlit as st 
+import joblib
 # ----------------------------
 # STEP-1: Load and preprocess dataset
 # ----------------------------
@@ -69,8 +72,15 @@ def train_models():
     for name, model in models.items():
         model.fit(X_train, y_train)
         trained[name] = model
+        if name == 'Random Forest':
+            joblib.dump(model, model.pkl)
     return trained
+# ----------------------------
+# Deploy model
+# ----------------------------
 
+def predict(data):
+    pass
 # ----------------------------
 # Evaluate models
 # ----------------------------

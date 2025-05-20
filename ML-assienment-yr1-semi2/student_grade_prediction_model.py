@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Title: "Student Performance Prediction using Logistic Regression, Random Forest, and XGBoost with LIME and SHAP for Explainable AI (XAI)"
+# Title: "Student Performance Prediction with XAI (LIME & SHAP)"
 
 import pandas as pd
 import numpy as np
@@ -17,42 +17,45 @@ import shap
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+import streamlit as st
+import joblib
+
 # ----------------------------
 # STEP-1: Load and preprocess dataset
 # ----------------------------
 
-df = pd.read_csv("student-mat.csv", sep=";")
+df = pd.read_csv("Student_data/student-mat.csv", sep=";")
 
-# Convert target to binary classification: Pass (>=10) or Fail (<10)
+# Convert G3 to binary classification
 df['G3'] = df['G3'].apply(lambda x: 1 if x >= 10 else 0)
 
-# Check for duplicates and drop them
+# Drop duplicates
 if df.duplicated().sum() > 0:
     df.drop_duplicates(inplace=True)
-    print("Duplicates removed")
 
-# Separate features and label
+# Features and label
 X = df.drop(columns=["G3"])
 y = df["G3"]
 
-# One-hot encode categorical features
+# One-hot encoding
 X = pd.get_dummies(X, drop_first=True)
 feature_names = X.columns.tolist()
 
-# Impute missing values (if any)
+# Handle missing values
 imputer = SimpleImputer(strategy="mean")
 X = pd.DataFrame(imputer.fit_transform(X), columns=X.columns)
 
 # Train-test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Scale features
+# Standardize features
 scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 
-X_train = pd.DataFrame(X_train, columns=feature_names)
-X_test = pd.DataFrame(X_test, columns=feature_names)
+# Save scaled versions with column names
+X_train = pd.DataFrame(X_train_scaled, columns=feature_names)
+X_test = pd.DataFrame(X_test_scaled, columns=feature_names)
 
 # ----------------------------
 # Train models
@@ -69,66 +72,72 @@ def train_models():
     for name, model in models.items():
         model.fit(X_train, y_train)
         trained[name] = model
+        if name == "Random Forest":
+            joblib.dump(model, 'model.pkl')
+
+    # Save necessary artifacts
+    joblib.dump(feature_names, "feature_names.pkl")
+    joblib.dump(scaler, "scaler.pkl")
+
     return trained
 
 # ----------------------------
-# Evaluate models
+# Streamlit App
+# ----------------------------
+
+def predict():
+    st.title("🎓 Student Pass/Fail Prediction")
+    st.markdown("🔢 Enter **numeric, comma-separated** values matching the model's features.")
+    st.caption("You need to enter **exactly 41 values**, in the same order used in training.")
+
+    input_feature = st.text_input("📥 Input Features:")
+    with st.expander("🧪 Need a sample input?"):
+        st.code("18,1,1,0,1,0,1,1,1,0,0,0,0,1,0,0,1,0,1,1,1,1,0,1,0,0,0,1,0,1,1,0,1,0,1,0,0,1,0,0,0", language="text")
+        st.caption("🔎 Paste this into the input box above to test a valid prediction.")
+
+    if st.button("🚀 Predict"):
+        try:
+            # Load artifacts
+            model = joblib.load("model.pkl")
+            feature_names = joblib.load("feature_names.pkl")
+            scaler = joblib.load("scaler.pkl")
+
+            # Parse input and check feature count
+            features = list(map(float, input_feature.strip().split(",")))
+            if len(features) != len(feature_names):
+                st.error(f"❌ Expected {len(feature_names)} features, but got {len(features)}.")
+                return
+
+            # Convert to DataFrame and scale
+            input_df = pd.DataFrame([features], columns=feature_names)
+            input_scaled = scaler.transform(input_df)
+
+            # Predict
+            prediction = model.predict(input_scaled)
+            result = "✅ Pass" if prediction[0] == 1 else "❌ Fail"
+            st.success(f"Prediction: {result}")
+
+        except Exception as e:
+            st.error(f"Error: {e}")
+            st.warning("⚠️ Make sure the input is properly formatted and complete.")
+
+# ----------------------------
+# Model Evaluation (console only)
 # ----------------------------
 
 def evaluate_model(model, name):
     y_pred = model.predict(X_test)
     y_proba = model.predict_proba(X_test)[:, 1]
 
-    print(f"--- {name} ---")
+    print(f"\n--- {name} ---")
     print("Accuracy:", accuracy_score(y_test, y_pred))
     print("Precision:", precision_score(y_test, y_pred))
     print("Recall:", recall_score(y_test, y_pred))
     print("F1 Score:", f1_score(y_test, y_pred))
     print("ROC AUC Score:", roc_auc_score(y_test, y_proba))
-    print()
 
 # ----------------------------
-# LIME Explanation
-# ----------------------------
-
-def lime_explanation(model, name):
-    explainer = lime.lime_tabular.LimeTabularExplainer(
-        training_data=np.array(X_train),
-        feature_names=X.columns.tolist(),
-        class_names=["Fail", "Pass"],
-        mode="classification"
-    )
-
-    exp = explainer.explain_instance(X_test.iloc[0], model.predict_proba, num_features=10)
-
-    print(f"\nLIME explanation for {name}:")
-    fig = exp.as_pyplot_figure()
-    plt.title(f"LIME Explanation - {name}", fontsize=14)
-    plt.tight_layout()
-    plt.show()
-
-# ----------------------------
-# SHAP Explanation
-# ----------------------------
-
-def shap_explanation(model, name):
-    if name != "Random Forest":
-        print(f"\nSHAP explanation for {name}")
-        explainer = shap.Explainer(model, X_train)
-        shap_values = explainer(X_test, check_additivity=False) if isinstance(model, (RandomForestClassifier, XGBClassifier)) else explainer(X_test)
-
-        plt.figure()
-        if len(shap_values.values.shape) == 3:
-            shap.plots.waterfall(shap_values[0, 1], show=False)
-        else:
-            shap.plots.waterfall(shap_values[0], show=False)
-        
-        plt.title(f"SHAP Explanation - {name}", fontsize=14)
-        plt.tight_layout()
-        plt.show()
-
-# ----------------------------
-# Run Everything
+# Main Entry
 # ----------------------------
 
 if __name__ == "__main__":
@@ -138,5 +147,6 @@ if __name__ == "__main__":
 
     for name, model in trained_models.items():
         evaluate_model(model, name)
-        lime_explanation(model, name)
-        shap_explanation(model, name)
+
+    # Launch Streamlit app
+    predict()
